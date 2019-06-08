@@ -19,11 +19,19 @@ FOOTER = '''## Usage
 
 Steps to follow : 
 
-1. Create directories for specific topics for example if you solve a problem on *HackerRank* per say
-   create a directory named `Competitive Programming` or if you learned something new in JavaScript , create a 
+1. Create directories for specific topics for example if you solve a problem on *HackerRank* create 
+   a directory named `Competitive Programming` or if you learned something new in JavaScript , create a 
    directory for the same .
+   Some recommended categories :
+    - Data Structures & Algo
+    - Meetups
+    - C++/JavaScript/Python
+    - HTML/CSS
+    - Git/Version Control
+    - Machine Learning
+
 2. Inside those directories create a [`Markdown`](https://www.markdownguide.org/basic-syntax/) file with your title for example 
-    `Variables_in_JavaScript.md`, 'Create_React_App.md' etc.
+    `Variables_in_JavaScript.md`, `Create_React_App.md` etc.
 3. Run `python createtil.py > README.md` to auto-generate the New README file for you 
     OR
    If you are using git, you can install this script as a pre-commit git hook so
