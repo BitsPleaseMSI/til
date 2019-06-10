@@ -93,7 +93,10 @@ def print_file (category_names, count, categories):
 	with open ('README.md', 'w') as file_:
 		file_.write (HEADER)
 		file_.write ('\n')
-		file_.write ('_{0} TILs and counting..._'.format(count))
+		if count == 1:
+			file_.write ('_{0} TIL and counting..._'.format(count))
+		else:
+			file_.write ('_{0} TILs and counting..._'.format(count))
 		file_.write ('\n')
 		file_.write ('''
 ---
