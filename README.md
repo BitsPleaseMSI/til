@@ -5,24 +5,9 @@
 A collection of concise write-ups on small things I learn across a variety of 
 languages and technologies.
 
-_2 TILs and counting..._
+_0 TILs and counting..._
 
 ## Categories
-* [Category-1](#Category-1)
-* [Category-2](#Category-2)
-
----
-
-### Category-1
-
-- [Test file 1](Category-1/Test-file-1.md)
-
-### Category-2
-
-- [Test file 2](Category-2/Test-file-2.md)
-
----
-
 ## Usage
 
 Steps to follow:
