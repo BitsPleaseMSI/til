@@ -63,6 +63,9 @@ def get_category_list ():
 	''' Walk the current directory and get a list of all subdirectories at that
 	level.  These are the "categories" in which there are TILs. '''
 	dirs = [x for x in os.listdir ('.') if os.path.isdir (x) and '.git' not in x]
+	print ("Subdirectories: ")
+	for dir in dirs:
+		print (dir)
 	return dirs
 
 def get_title (til_file):
@@ -78,12 +81,20 @@ def get_title (til_file):
 def get_tils (category):
 	''' For a given category, get the list of TIL titles. '''
 	til_files = [x for x in os.listdir (category)]
+	print ("Files: ")
+	for til_file in til_files:
+		print (til_file)
 	titles = []
 	for filename in til_files:
 		fullname = os.path.join (category, filename)
 		if (os.path.isfile (fullname)) and fullname.endswith ('.md'):
 			title = get_title (fullname)
-			titles.append ((title, fullname))
+			# changing path separator for Windows paths
+			# https://mail.python.org/pipermail/tutor/2011-July/084788.html
+			titles.append ((title, fullname.replace (os.path.sep, '/')))
+	print ("Titles: ")
+	for title in titles:
+		print (title)
 	return titles
 
 def get_category_dict (category_names):

@@ -18,11 +18,11 @@ _2 TILs and counting..._
 
 ### C++
 
-- [Everything I know is wrong.](C++\C++.md)
+- [Everything I know is wrong.](C++/Everything-I-know-is-wrong.md)
 
 ### Makefile
 
-- [Makefiles exist.](Makefile\Makefiles-exist.md)
+- [Makefiles exist.](Makefile/Makefiles-exist.md)
 
 ---
 
