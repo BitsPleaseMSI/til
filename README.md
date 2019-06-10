@@ -5,24 +5,9 @@
 A collection of concise write-ups on small things I learn across a variety of 
 languages and technologies.
 
-
-_2 TILs and counting..._
-
+_0 TILs and counting..._
 
 ## Categories
-
-* [C++](#C++)
-* [Makefile](#Makefile)
-
----
-
-### C++
-
-- [Everything I know is wrong.](C++/Everything-I-know-is-wrong.md)
-
-### Makefile
-
-- [Makefiles exist.](Makefile/Makefiles-exist.md)
 
 ---
 

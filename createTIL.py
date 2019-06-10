@@ -13,9 +13,7 @@ languages and technologies.
 
 '''
 
-FOOTER = '''---
-
-## Usage
+FOOTER = '''## Usage
 
 Steps to follow:
 
@@ -101,16 +99,13 @@ def print_file (category_names, count, categories):
 	''' Now we have all the information, print it out in markdown format. '''
 	with open ('README.md', 'w') as file:
 		file.write (HEADER)
-		file.write ('\n')
 		if count == 1:
 			file.write ('_{0} TIL and counting..._'.format(count))
 		else:
 			file.write ('_{0} TILs and counting..._'.format(count))
-		file.write ('\n')
 		file.write ('''
 
 ## Categories
-
 ''')
 		# print the list of categories with links
 		for category in sorted (category_names):
