@@ -111,7 +111,8 @@ def print_file (category_names, count, categories):
 		for category in sorted (category_names):
 			file.write ('* [{0}](#{1})\n'.format (category.capitalize (), category))
 
-		file.write ('''
+		if len (category_names) > 0:
+			file.write ('''
 ---
 
 ''')
@@ -124,6 +125,10 @@ def print_file (category_names, count, categories):
 				file.write ('- [{0}]({1})\n'.format (title, filename))
 			file.write ('\n')
 
+		if len (category_names) > 0:
+			file.write ('''---
+
+''')
 		file.write (FOOTER)
 
 def create_README ():
