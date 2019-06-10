@@ -52,14 +52,12 @@ Original Idea/Work [thoughtbot/til](https://github.com/thoughtbot/til).
 * [thoughtbot/til](https://github.com/thoughtbot/til)
 '''
 
-
 def get_list_of_categories():
     ''' Walk the current directory and get a list of all subdirectories at that
     level.  These are the "categories" in which there are TILs.'''
     dirs = [x for x in os.listdir('.') if os.path.isdir(x) and
             '.git' not in x]
     return dirs
-
 
 def get_title(til_file):
     ''' Read the file until we hit the first line that starts with a #
@@ -70,7 +68,6 @@ def get_title(til_file):
             line = line.strip()
             if line.startswith('#'):
                 return line[1:].lstrip()  # text after # and whitespace
-
 
 def get_tils(category):
     ''' For a given category, get the list of TIL titles. '''
@@ -83,7 +80,6 @@ def get_tils(category):
             titles.append((title, fullname))
     return titles
 
-
 def get_category_dict(category_names):
     categories = {}
     count = 0
@@ -92,7 +88,6 @@ def get_category_dict(category_names):
         categories[category] = titles
         count += len(titles)
     return count, categories
-
 
 def print_file(category_names, count, categories):
     ''' Now we have all the information, print it out in markdown format. '''
@@ -126,7 +121,6 @@ def print_file(category_names, count, categories):
             file_.write('\n')
 
         file_.write(FOOTER)
-
 
 def create_readme():
     ''' Create a TIL README.md file with a nice index for using it directly
