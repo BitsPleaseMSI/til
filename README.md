@@ -30,11 +30,8 @@ Steps to follow:
 	`Create_React_App.md` etc. Make sure that the markdown file has a title. 
 	Spaces in titles are _not_ recommended since different services render 
 	markdown differently.
-	
+
 3. Every Markdown TIL file should start with a `#` i.e h1 heading.
-    For e.g
-    # Today I learned about list comprehensions.
-    ........
 
 4. Run `python createTIL.py` to auto-generate the new README file for you 
 	
